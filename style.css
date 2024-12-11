@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(0, 36%, 95%);
+    font-family: sans-serif;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+    background-color: hsl(222, 52%, 48%);
+    color: aliceblue;
+    margin-bottom: 3%;
+    border: 2px solid black;
+}
+
+main {
+    display: grid;
+    padding: 2em;
+}
+
+.section_container{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.column {
+    display: grid;
+    gap: 0.5em;
+}
+
+.columns {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+}
+
+.calculator_card {
+    background-color: hsl(0, 0%, 98%);
+    border: 2px solid rgb(180, 184, 188);
+    min-height: 450px;
+    width: 80%;
+    box-shadow: 3px 3px 3px rgb(74, 73, 73);
+    margin-left: 30px;
+}
+
+.calculator_input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(78, 71, 71);
+    font-size: 35px;
+    color: azure;
+    text-align: right;
+    margin-bottom: 4%;
+}
+
+.calculator_columns-operations {
+    display: grid;
+    padding: 0.5em;
+    gap: 0.5em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, min-content);
+    grid-template-rows: repeat(2, min-content);
+}
+
+.calculator_numbers {
+    display: grid;
+    padding: 0.5em;
+    gap: 0.5em;
+    grid-template-columns: 73% 27%;
+    grid-template-rows: repeat(2, min-content);
+}
+
+.calculator_numbers-left {
+    display: grid;
+    padding: 0.5em;
+    gap: 0.5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+}
+
+.calculator_numbers-right {
+    display: grid;
+    padding: 0.5em;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, min-content);
+}
+
+.buttons {
+    background-color: black;
+    color: aqua;
+    border-radius: 0.4rem;
+    height: 50px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.button_equals {
+    min-height: 50px;
+    height: 223px;
+}
+
+.buttons:hover {
+    background-color: rgb(33, 59, 154);
+    transition: 0.002s;
+    color: white;
+} 
+
+.buttons:active {
+    background-color: rgb(234, 239, 250);
+    color: black;
+    transition: 0.5s;
+} 
+
+
